@@ -43,11 +43,9 @@ app.post("/dayfinder", async (req, res) => {
 
   const currentDate = new Date();
 
-  console.log();
-
   try {
     const requestBody = {
-      searchDate: `${currentDate.getDate()}/ ${currentDate.getMonth()} / ${currentDate.getFullYear()}   ${currentDate
+      searchDate: `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()}   ${currentDate
         .getHours()
         .toString()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`,
       request: date,
